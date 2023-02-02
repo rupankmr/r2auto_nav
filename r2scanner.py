@@ -40,7 +40,9 @@ class Scanner(Node):
 
         # log the info
         self.get_logger().info('Shortest distance at %i degrees' % lr2i)
-        self.get_logger().info('Shortest dist: %i' % laser_range[lr2i])
+#        for i in range(laser_range):
+        self.get_logger().info('shortest dist: %f' % laser_range[lr2i])
+          
 
 
 def main(args=None):
